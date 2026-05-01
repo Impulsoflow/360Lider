@@ -1442,9 +1442,11 @@ function dashShareWhatsApp() {
   const link = document.getElementById("dash-link").textContent;
   const name = currentLeaderData?.name || "um(a) líder";
   const msg = encodeURIComponent(
-    `Olá! Você foi convidado(a) a participar de uma Avaliação 360° de ${name}.\n\n` +
-    `É 100% anônima e leva ~10 minutos. Sua opinião é muito importante! 🙏\n\n` +
-    `🔗 Acesse: ${link}`
+    `Olá! Estou participando de uma Avaliação Leadership 360° do Instituto Impulso IE™ de Liderança e gostaria de contar com você como avaliador(a).\n\n` +
+    `Sua resposta é 100% anônima e leva apenas alguns minutos.\n\n` +
+    `🔗 Link: ${link}\n` +
+    `🔑 Código: ${leaderCode}\n\n` +
+    `Sua opinião é muito importante para meu desenvolvimento. Conto com vocÊ. Obrigado(a)!\n\n— ${name}`    
   );
   window.open("https://wa.me/?text=" + msg, "_blank");
 }
